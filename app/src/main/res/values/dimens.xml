@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- text size -->
+    <dimen name="text_normal">14sp</dimen>
+
+    <dimen name="thumb_width">22dp</dimen>
+    <dimen name="thumb_height">22dp</dimen>
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+    <dimen name="radius_corners">7dp</dimen>
+
+
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+
+    <dimen name="progress_bar_height">2dp</dimen>
+
+    <dimen name="divider_size_vert">10dp</dimen>
+    <dimen name="divider_gap_vert">8dp</dimen>
+
+    <dimen name="onboarding_bubble_radius">6dp</dimen>
+    <dimen name="onboarding_button_radius">80dp</dimen>
+</resources>

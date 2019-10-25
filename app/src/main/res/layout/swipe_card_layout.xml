@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ello.swipedeck.layouts.SwipeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipedeck="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ello.swipedeck.SwipeDeck
+        android:id="@+id/swipe_deck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        swipedeck:card_spacing="0dp"
+        swipedeck:max_visible="3"
+        android:layout_marginBottom="80dp"
+        swipedeck:preview_layout="@layout/swipe_card_item"
+        swipedeck:render_above="false" />
+
+</ello.swipedeck.layouts.SwipeRelativeLayout>

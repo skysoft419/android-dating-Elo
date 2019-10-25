@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:id="@+id/rootView"
+    android:focusableInTouchMode="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/parentLayout"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/rlt_header"
+        layout="@layout/profile_header" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat_conversation_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+
+            />
+
+        <include
+            android:id="@+id/rlt_empty_chat"
+            layout="@layout/chat_conversation_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    >
+    <RelativeLayout
+        android:id="@+id/rlt_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chat_input_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_border"
+            android:visibility="gone" />
+
+        <com.obs.CustomEditText
+            android:id="@+id/edt_new_msg"
+            style="@style/proximanova_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/iv_send"
+            android:layout_toStartOf="@+id/iv_send"
+            android:background="@null"
+            android:hint="Type your love notes here..."
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="5"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textColor="@color/text_very_dark"
+            android:textColorHint="@color/chat_input_hint"
+            android:textCursorDrawable="@drawable/cursorcolor"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </com.obs.CustomEditText>
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_send" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/mv_color"
+        android:src="@drawable/ic_gradient_color"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/rlt_send_msg"
+        android:visibility="visible" />
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/mv_color"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/rlt_send_msg"
+        android:id="@+id/tv_gif_icon"
+        android:src="@drawable/ic_gif"
+
+        />
+</RelativeLayout>
+</RelativeLayout>

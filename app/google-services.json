@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "205546481976",
+    "firebase_url": "https://ello-ad964.firebaseio.com",
+    "project_id": "ello-ad964",
+    "storage_bucket": "ello-ad964.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205546481976:android:95a8b2c25d504a5d",
+        "android_client_info": {
+          "package_name": "com.brains.ello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205546481976-5kip0gugnnm1alq94filso4f8e3tmm09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFnUY1-OQ9rFsvX4p8O94ElCGR-mo8OkM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

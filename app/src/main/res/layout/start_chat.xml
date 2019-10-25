@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+<ImageView
+    android:layout_marginTop="25dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/smiley"
+    />
+    <com.obs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Say Ello!"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:textColor="#848484"
+        style="@style/proximanova_bold"
+        />
+    <com.obs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Don't make your matches wait..."
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#848484"
+        style="@style/proximanova_regular"
+        />
+</LinearLayout>
